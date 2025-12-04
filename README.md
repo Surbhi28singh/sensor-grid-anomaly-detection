@@ -1,36 +1,89 @@
-# Debugging Faults in Grid-Based Sensor Networks using Anomaly Detection
+Intelligent Sensor Grid Anomaly Detection
+Hybrid ML + Autoencoder • Real-Time Streaming • Edge + Cloud Ready
+<p align="center"> <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge"/> <img src="https://img.shields.io/badge/Machine%20Learning-Enabled-blue?style=for-the-badge"/> <img src="https://img.shields.io/badge/Deep%20Learning-Autoencoder-purple?style=for-the-badge"/> <img src="https://img.shields.io/badge/Real%20Time-Yes-orange?style=for-the-badge"/> </p>
 
-**Institute:** GL Bajaj Institute of Technology and Management  
-**Guide:** Ms. Ayasha Malik  
+A modern anomaly detection system for grid-based sensor networks using Machine Learning, Deep Learning, and Real-Time Streaming.
+Designed as a Final-Year Major Project (300 Marks) with professional-grade architecture.
 
----
+✨ Key Features
 
-## 🔍 Project Overview
-This project aims to **detect and debug faults in IoT sensor grids** using **Machine Learning**.  
-A **5x5 sensor grid (25 nodes)** is simulated with synthetic readings, where random spikes and drops are injected to mimic faulty behavior.  
-The **Isolation Forest algorithm** is applied to detect anomalies automatically, without the need for labeled data.  
+⚡ Hybrid Model: Random Forest + Autoencoder
 
-The results are visualized using **time-series plots** and a **heatmap**, making it easy to identify malfunctioning nodes.  
-This project demonstrates how ML can improve reliability in **IoT, smart grids, and industrial systems**.
+📡 Real-Time Sensor Monitoring (Kafka/MQTT Ready)
 
----
+🧠 Explainable AI: SHAP-based insights
 
-## ⚙️ Features
-- ✅ Simulation of a 5x5 IoT sensor grid  
-- ✅ Fault injection to simulate real-world problems  
-- ✅ Anomaly detection using Isolation Forest  
-- ✅ Visualization: time-series plots + heatmap  
-- ✅ Includes report & PPT for academic submission  
+🧭 Drift Detection for evolving sensor behavior
 
----
+📊 Rich Dashboard: Live charts, anomalies, summaries
 
-## 📊 Applications
-- Smart Grids (electricity monitoring)  
-- IoT Device Health Monitoring  
-- Industrial Sensor Fault Diagnosis  
-- Cybersecurity Anomaly Detection  
+☁️ Edge + Cloud Deployment compatible
 
+📱 Alerts: Email / SMS / WhatsApp
 
+🎯 Project Overview
+
+Sensor grids generate continuous data that may contain noise, faults, missing values, or attack patterns.
+This system detects anomalies instantly, provides explanations, and supports scalable deployment.
+
+🏗️ System Architecture
+Sensors → Edge Module → Kafka/MQTT → ML Engine (RF + Autoencoder)
+        → Cloud/MongoDB → Streamlit Dashboard → Alerts
 
 
 
+
+🛠️ Tech Stack
+
+Machine Learning:
+Random Forest • Autoencoder • Isolation Forest
+
+Languages & Frameworks:
+Python • TensorFlow • Scikit-Learn • NumPy • Pandas
+
+Pipeline & Messaging:
+Kafka • MQTT
+
+Storage:
+MongoDB • AWS S3
+
+Visualization:
+Streamlit • Plotly
+
+📊 Results
+
+🔍 High anomaly detection accuracy
+
+📉 Low false-positive rate
+
+⚡ Millisecond-level edge inference
+
+🧠 SHAP plots for model interpretability
+
+▶️ How to Run
+pip install -r requirements.txt
+
+# Generate sensor data
+python src/data_generator.py
+
+# Train the models
+python src/model_training.py
+
+# Launch dashboard
+streamlit run dashboard/app.py
+
+🚀 Future Improvements
+
+LoRaWAN long-range sensor support
+
+Transformer-based anomaly detection
+
+Blockchain for sensor-log integrity
+
+Mobile app with real-time visualization
+
+👤 Developer
+
+Surbhi Singh
+B.Tech CSE | AI/ML • IoT • Data Science
+⭐ If you like this project, consider giving it a star!
